@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fde-Qt-T21">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="OyW-FI-hcM">
+            <objects>
+                <viewController id="F9H-X0-Xgh" customClass="ViewController" customModule="FirebaseMemberFunctions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X2Z-9d-qu2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="82g-hI-9Fl">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch6-nb-g2F">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="143"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SingUp"/>
+                                        <connections>
+                                            <segue destination="fVx-Cf-3Oa" kind="show" id="lg3-9H-Wri"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTe-N9-8UB">
+                                        <rect key="frame" x="0.0" y="143" width="393" height="143"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SingOn"/>
+                                        <connections>
+                                            <segue destination="txI-If-XBR" kind="show" id="FRI-ej-apk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeR-G8-9B6">
+                                        <rect key="frame" x="0.0" y="286" width="393" height="143"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="PasswordReset"/>
+                                        <connections>
+                                            <segue destination="ifb-yg-fCh" kind="show" id="xx6-8M-bPS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ0-QP-eob">
+                                        <rect key="frame" x="0.0" y="429" width="393" height="143"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SingOut"/>
+                                        <connections>
+                                            <segue destination="m1c-58-m6B" kind="show" id="Xfq-f4-HQ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doF-kT-VkI">
+                                        <rect key="frame" x="0.0" y="572" width="393" height="143"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Withdraw"/>
+                                        <connections>
+                                            <segue destination="Ilb-Vc-90y" kind="show" id="XAa-cR-egw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tLc-Bo-IYw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tLc-Bo-IYw" firstAttribute="trailing" secondItem="82g-hI-9Fl" secondAttribute="trailing" id="DvN-sq-lPr"/>
+                            <constraint firstItem="tLc-Bo-IYw" firstAttribute="bottom" secondItem="82g-hI-9Fl" secondAttribute="bottom" id="Uym-PO-5qR"/>
+                            <constraint firstItem="82g-hI-9Fl" firstAttribute="leading" secondItem="tLc-Bo-IYw" secondAttribute="leading" id="hnw-Ih-oOl"/>
+                            <constraint firstItem="82g-hI-9Fl" firstAttribute="top" secondItem="tLc-Bo-IYw" secondAttribute="top" id="t36-pm-KPX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qzb-sV-KrG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HbF-JN-MeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214.50381679389312" y="-196.47887323943664"/>
+        </scene>
+        <!--SingUp-->
+        <scene sceneID="WMa-BI-aYK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingUp" id="fVx-Cf-3Oa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6C1-f5-qvW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahy-gJ-0DH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.32061068702285" y="-507.04225352112678"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="5YN-Cm-RmN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="txI-If-XBR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BVJ-Yv-hgZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jz0-q6-NoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="-462"/>
+        </scene>
+        <!--PasswordReset-->
+        <scene sceneID="E95-lz-7Wq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PasswordReset" id="ifb-yg-fCh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mnz-bo-coH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nxh-cA-Ibe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="-382"/>
+        </scene>
+        <!--SingOut-->
+        <scene sceneID="nOU-Hs-7xA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingOut" id="m1c-58-m6B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OzM-eb-dFm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzZ-Vz-ecT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-294"/>
+        </scene>
+        <!--Withdraw-->
+        <scene sceneID="M7f-zf-Y21">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Withdraw" id="Ilb-Vc-90y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wdg-AR-gdP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5I-mU-1ib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="-107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="96E-6I-Cb2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fde-Qt-T21" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Be-Fb-DyC">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F9H-X0-Xgh" kind="relationship" relationship="rootViewController" id="PWF-Ak-RKI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9y-ZH-a2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-712.2137404580152" y="-196.47887323943664"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
