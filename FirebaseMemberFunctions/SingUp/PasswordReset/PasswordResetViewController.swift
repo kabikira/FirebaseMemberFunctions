@@ -16,11 +16,10 @@ class PasswordResetViewController: UIViewController {
 
         Auth.auth().sendPasswordReset(withEmail: email) { [weak self] error in
             guard let self = self else { return }
+            print("送信完了")
             if error != nil {
-                // 送信完了画面へ遷移
-                print("送信完了")
+                self.showErrorAlert(error: error, vc: self)
             }
-            self.showErrorAlert(error: error, vc: self)
         }
 
     }

@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-bh-5F3">
-                                <rect key="frame" x="0.0" y="320.66666666666669" width="393" height="211.00000000000006"/>
+                                <rect key="frame" x="0.0" y="291" width="393" height="270"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UCO-y2-DN5">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="211"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="270"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザー名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZe-JF-d1j">
                                                 <rect key="frame" x="46.666666666666657" y="0.0" width="300" height="34"/>
@@ -59,11 +59,26 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="usM-qE-Q04"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="サインアップ">
+                                                <state key="normal" title="登録してメール送信">
                                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="didTapSignUpButton:" destination="E4A-jo-yf0" eventType="touchUpInside" id="0nC-9D-lBG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuq-Sy-gE6">
+                                                <rect key="frame" x="46.666666666666657" y="236" width="300" height="34"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="jc8-bS-dBO" userLabel="height = 44"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ojC-82-mS7"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="メールを確認したのでログイン">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapSignUpButton:" destination="E4A-jo-yf0" eventType="touchUpInside" id="FgQ-Mz-sIo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -81,6 +96,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="didTapLoginButton" destination="Cuq-Sy-gE6" id="gMd-Ub-t5L"/>
                         <outlet property="emailTextField" destination="Qm9-X3-0fy" id="gUV-OO-2D6"/>
                         <outlet property="nameTextField" destination="iZe-JF-d1j" id="N2K-xW-vaz"/>
                         <outlet property="passwordTextField" destination="YwC-Ia-mro" id="jqQ-8A-lrS"/>
