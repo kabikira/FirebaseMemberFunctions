@@ -31,7 +31,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTe-N9-8UB">
                                         <rect key="frame" x="0.0" y="143" width="393" height="143"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="SingOn"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SingIn"/>
                                         <connections>
                                             <segue destination="txI-If-XBR" kind="show" id="FRI-ej-apk"/>
                                         </connections>
@@ -39,7 +39,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeR-G8-9B6">
                                         <rect key="frame" x="0.0" y="286" width="393" height="143"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="PasswordReset"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="PasswordReset"/>
                                         <connections>
                                             <segue destination="ifb-yg-fCh" kind="show" id="xx6-8M-bPS"/>
                                         </connections>
